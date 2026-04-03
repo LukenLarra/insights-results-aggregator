@@ -2,7 +2,7 @@ name: Aggregator BDD tests
 
 on:
   push:
-    branches: ["master"]
+    branches: ["master", aggregator-framework-config]
   pull_request:
   workflow_dispatch:
 
