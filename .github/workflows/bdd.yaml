@@ -16,7 +16,6 @@ jobs:
       use_postgres: true
       postgres_version: "13.9"
       parallel_execution: true
-      extra_framework_files: "clean_aggregator_database.sql prepare_aggregator_database.sql tutorial_only.json insights_results_aggregator_wrong_db.toml insights_results_aggregator_wrong_kafka.toml 05_rules_hits.json"
 
   dvo-bdd:
     name: DVO BDD tests
@@ -26,4 +25,3 @@ jobs:
       use_kafka: true
       use_postgres: true
       parallel_execution: true
-      extra_framework_files: "dvo_writer_docker_env.toml clean_aggregator_database.sql prepare_aggregator_database.sql"
