@@ -26,4 +26,4 @@ jobs:
       use_kafka: true
       use_postgres: true
       parallel_execution: false
-      extra_framework_files: "dvo_writer_docker_env.toml clean_aggregator_database.sql"
+      extra_framework_files: "dvo_writer_docker_env.toml clean_aggregator_database.sql prepare_aggregator_database.sql"
