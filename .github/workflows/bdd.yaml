@@ -16,7 +16,7 @@ jobs:
       use_postgres: true
       postgres_version: "13.9"
       parallel_execution: true
-      extra_framework_files: "clean_aggregator_database.sql prepare_aggregator_database.sql"
+      extra_framework_files: "clean_aggregator_database.sql prepare_aggregator_database.sql tutorial_only.json"
 
   dvo-bdd:
     name: DVO BDD tests
