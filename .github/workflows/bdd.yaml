@@ -15,7 +15,7 @@ jobs:
       use_kafka: true
       use_postgres: true
       postgres_version: "13.9"
-      parallel_execution: false
+      parallel_execution: true
 
   dvo-bdd:
     name: DVO BDD tests
@@ -24,4 +24,4 @@ jobs:
       service: dvo-writer
       use_kafka: true
       use_postgres: true
-      parallel_execution: false
+      parallel_execution: true
