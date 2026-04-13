@@ -4,20 +4,24 @@ on:
   push:
     branches: ["master"]
   pull_request:
+  workflow_dispatch:
 
 jobs:
   aggregator-bdd:
     name: BDD tests
-    uses: RedHatInsights/processing-tools/.github/workflows/bdd.yaml@master
+    uses: LukenLarra/processing-tools/.github/workflows/bdd.yaml@main
     with:
-      service: aggregator
+      service: insights-results-aggregator 
       use_kafka: true
       use_postgres: true
+      postgres_version: "13.9"
+      parallel_execution: true
 
   dvo-bdd:
     name: DVO BDD tests
-    uses: RedHatInsights/processing-tools/.github/workflows/bdd.yaml@master
+    uses: LukenLarra/processing-tools/.github/workflows/bdd.yaml@main
     with:
       service: dvo-writer
       use_kafka: true
       use_postgres: true
+      parallel_execution: true
