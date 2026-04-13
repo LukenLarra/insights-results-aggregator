@@ -9,7 +9,7 @@ on:
 jobs:
   aggregator-bdd:
     name: BDD tests
-    uses: LukenLarra/processing-tools/.github/workflows/bdd.yaml@feature-parallel-execution
+    uses: LukenLarra/processing-tools/.github/workflows/bdd.yaml@main
     with:
       service: insights-results-aggregator 
       use_kafka: true
@@ -19,7 +19,7 @@ jobs:
 
   dvo-bdd:
     name: DVO BDD tests
-    uses: LukenLarra/processing-tools/.github/workflows/bdd.yaml@feature-parallel-execution
+    uses: LukenLarra/processing-tools/.github/workflows/bdd.yaml@main
     with:
       service: dvo-writer
       use_kafka: true
